@@ -4,8 +4,10 @@
     新的盒模型                     box-sizing
                                   content-box       width/height指的是内容部分
                                   border-box        width/height指的是到border外面
+                                  浏览器视图窗口拉升缩小整体不会变化（随比例缩放）
+
     弹性盒模型                     父级——display:flex;
-                                  子级——flex:1;
+                                  子级——flex:1;(占比系数,也可以是flex:2)
                                   *可用总宽度-固定占的宽=>剩余空间
                                   剩余空间*flex/flex_sum=>width
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>媒体查询</title>
+    <style media="screen">
+      * {margin: 0;padding: 0;list-style: none}
+      #aside {height: 250px;left:0;position: fixed;top:50%}
+      #aside li {height: 50px;width: 100px;line-height: 50px;border: 1px solid;color:white;text-align: center;}
+      #aside li.b1 {background:#3b5998}
+      #aside li.b2 {background:#1da1f1}
+      #aside li.b3 {background:#db4e41}
+      #aside li.b4 {background:#6383a8}
+      #aside li.b5 {background:#fe6550}
+      #aside li:hover{width: 150px}
+
+      @media (max-width:800px) {
+        /*#aside {height:50px;display:flex;width: 100%;bottom: 0;margin-top: 0;top: auto;}
+        /*#aside {height:50px;display:flex;width:100%;bottom:0; top:auto;margin-top:0;}*/
+        #aside {height:50px;display:flex;width:100%;bottom:0; top:auto;margin-top:0;}
+        #aside li {flex:1;width:auto;}
+        #aside li:hover {width: auto;}
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="aside">
+      <li class="b1">Facebook</li>
+      <li class="b2">Twitter</li>
+      <li class="b3">Google+</li>
+      <li class="b4">vk</li>
+      <li class="b5">other</li>
+    </ul>
+  </body>
+</html>
